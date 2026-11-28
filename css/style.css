@@ -269,19 +269,6 @@ button {
   padding: 4px 10px;
 }
 
-/* Теги в боковой панели */
-.side-block { margin-top: 26px; border-top: 1px solid var(--border-soft); padding-top: 14px; }
-.side-title {
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-faint);
-  margin: 0 0 10px;
-}
-
-.tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
-
 /* ============================================================
    Чипы тегов (на карточках и в строке активных фильтров)
    ============================================================ */
