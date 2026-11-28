@@ -10,6 +10,7 @@
 
   var els = {
     tree: document.getElementById('tree'),
+    tagCloud: document.getElementById('tag-cloud'),
     sidebar: document.getElementById('sidebar'),
     overlay: document.getElementById('overlay'),
     menuToggle: document.getElementById('menu-toggle'),
@@ -328,7 +329,36 @@
     });
   }
 
-  // ---------- Теги (фильтрация по клику на тег карточки) ----------
+  // ---------- Теги (облако под деревом + фильтрация по тегу карточки) ----------
+
+  function buildTagCloud() {
+    els.tagCloud.textContent = '';
+    var tags = Array.from(tagCounts.keys()).sort(function (a, b) {
+      return a.localeCompare(b, 'ru');
+    });
+    if (!tags.length) {
+      var note = document.createElement('span');
+      note.className = 'tree-empty-note';
+      note.textContent = 'Теги не заданы';
+      els.tagCloud.appendChild(note);
+      return;
+    }
+    tags.forEach(function (t) {
+      var chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chip';
+      chip.setAttribute('data-tag', t);
+      chip.textContent = t + ' (' + tagCounts.get(t) + ')';
+      chip.setAttribute('aria-pressed', String(state.tags.indexOf(t) !== -1));
+      els.tagCloud.appendChild(chip);
+    });
+  }
+
+  function onTagCloudClick(e) {
+    var chip = e.target.closest('.chip[data-tag]');
+    if (!chip) return;
+    toggleTag(chip.getAttribute('data-tag'));
+  }
 
   function toggleTag(tag) {
     var i = state.tags.indexOf(tag);
@@ -641,6 +671,15 @@
     writeHash(push === true);
     refreshTree();
     renderMain();
+    refreshTagCloudPressed();
+  }
+
+  function refreshTagCloudPressed() {
+    var chips = els.tagCloud.querySelectorAll('.chip[data-tag]');
+    Array.prototype.forEach.call(chips, function (chip) {
+      var t = chip.getAttribute('data-tag');
+      chip.setAttribute('aria-pressed', String(state.tags.indexOf(t) !== -1));
+    });
   }
 
   function showFatal(title, detail, hint) {
@@ -672,6 +711,8 @@
       update();
     }, SEARCH_DEBOUNCE_MS));
 
+    els.tagCloud.addEventListener('click', onTagCloudClick);
+
     window.addEventListener('hashchange', function () {
       parseHash();
       els.search.value = state.q;
@@ -690,6 +731,7 @@
         catalog.resources = checked.resources;
         buildIndexes();
         buildTree();
+        buildTagCloud();
         parseHash();
         els.search.value = state.q;
         update();
