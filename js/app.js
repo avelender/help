@@ -234,19 +234,6 @@
   function buildTree() {
     els.tree.textContent = '';
 
-    var allBtn = document.createElement('button');
-    allBtn.type = 'button';
-    allBtn.className = 'tree-link all-link';
-    allBtn.setAttribute('data-id', ALL);
-    var allLabel = document.createElement('span');
-    allLabel.textContent = 'Все ресурсы';
-    allBtn.appendChild(allLabel);
-    var allCount = document.createElement('span');
-    allCount.className = 'tree-count';
-    allCount.textContent = String(catalog.resources.length);
-    allBtn.appendChild(allCount);
-    els.tree.appendChild(allBtn);
-
     catalog.categories.forEach(function (root) {
       els.tree.appendChild(renderNode(root, 0));
     });
