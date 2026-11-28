@@ -3,65 +3,39 @@
   "updated": "2026-11-28",
   "categories": [
     {
-      "id": "cctv",
-      "name": "Видеонаблюдение (CCTV)",
+      "id": "training",
+      "name": "Бесплатное онлайн обучение",
       "order": 1,
-      "children": [
-        { "id": "cctv-training", "name": "Обучение", "order": 1, "children": [] },
-        { "id": "cctv-lens", "name": "Калькуляторы объектива", "order": 2, "children": [] },
-        { "id": "cctv-archive", "name": "Калькуляторы архива", "order": 3, "children": [] },
-        { "id": "cctv-tools", "name": "Утилиты и базы", "order": 4, "children": [] },
-        { "id": "cctv-media", "name": "Каналы и блоги", "order": 5, "children": [] }
-      ]
-    },
-    {
-      "id": "acs",
-      "name": "СКУД",
-      "order": 2,
-      "children": [
-        { "id": "acs-training", "name": "Обучение", "order": 1, "children": [] },
-        { "id": "acs-tools", "name": "Утилиты", "order": 2, "children": [] }
-      ]
-    },
-    {
-      "id": "ops",
-      "name": "ОПС",
-      "order": 3,
-      "children": [
-        { "id": "ops-training", "name": "Обучение", "order": 1, "children": [] },
-        { "id": "ops-media", "name": "Блоги и статьи", "order": 2, "children": [] }
-      ]
-    },
-    {
-      "id": "network",
-      "name": "Сети и телеком",
-      "order": 4,
-      "children": [
-        { "id": "network-training", "name": "Обучение", "order": 1, "children": [] },
-        { "id": "network-tools", "name": "Инструменты", "order": 2, "children": [] },
-        { "id": "network-media", "name": "Каналы и видео", "order": 3, "children": [] }
-      ]
-    },
-    {
-      "id": "storage",
-      "name": "Серверы и хранилища",
-      "order": 5,
-      "children": [
-        { "id": "storage-raid", "name": "RAID: описание и сравнение", "order": 1, "children": [] },
-        { "id": "storage-raid-calc", "name": "Калькуляторы RAID", "order": 2, "children": [] },
-        { "id": "storage-drives", "name": "Накопители и восстановление данных", "order": 3, "children": [] }
-      ]
-    },
-    {
-      "id": "it",
-      "name": "ИТ и администрирование",
-      "order": 6,
       "children": []
     },
     {
-      "id": "docs",
-      "name": "Книги и документы",
-      "order": 7,
+      "id": "lens-calc",
+      "name": "Калькуляторы объектива",
+      "order": 2,
+      "children": []
+    },
+    {
+      "id": "archive-calc",
+      "name": "Калькуляторы архива",
+      "order": 3,
+      "children": []
+    },
+    {
+      "id": "raid-about",
+      "name": "Описание и сравнение RAID",
+      "order": 4,
+      "children": []
+    },
+    {
+      "id": "raid-calc",
+      "name": "Калькуляторы RAID",
+      "order": 5,
+      "children": []
+    },
+    {
+      "id": "useful",
+      "name": "Полезное",
+      "order": 6,
       "children": []
     }
   ],
@@ -71,7 +45,7 @@
       "title": "Портал обучения DSSL",
       "url": "https://edu.dssl.ru/",
       "description": "Бесплатные курсы и вебинары по видеонаблюдению и TRASSIR",
-      "category": "cctv-training",
+      "category": "training",
       "tags": ["обучение", "видеонаблюдение"],
       "order": 1
     },
@@ -80,7 +54,7 @@
       "title": "Онлайн обучение IDIS",
       "url": "https://forms.yandex.ru/cloud/5def5e2d2c7b8b0cd4158b6f/",
       "description": "Регистрация на бесплатные онлайн-курсы IDIS E-learning",
-      "category": "cctv-training",
+      "category": "training",
       "tags": ["обучение", "видеонаблюдение"],
       "order": 2
     },
@@ -89,7 +63,7 @@
       "title": "Курсы Satvision",
       "url": "https://school.satvision-cctv.ru",
       "description": "Учебные курсы по видеонаблюдению",
-      "category": "cctv-training",
+      "category": "training",
       "tags": ["обучение", "видеонаблюдение"],
       "order": 3
     },
@@ -98,7 +72,7 @@
       "title": "Портал обучения Axis",
       "url": "https://www.axis.com/learning",
       "description": "Курсы и материалы учебного портала Axis Communications",
-      "category": "cctv-training",
+      "category": "training",
       "tags": ["обучение", "видеонаблюдение"],
       "order": 4
     },
@@ -107,16 +81,70 @@
       "title": "Основы видеонаблюдения на Stepik",
       "url": "https://stepik.org/course/54537/promo",
       "description": "Бесплатный курс по основам видеонаблюдения",
-      "category": "cctv-training",
+      "category": "training",
       "tags": ["обучение", "видеонаблюдение"],
       "order": 5
+    },
+    {
+      "id": "sigur-edu",
+      "title": "Учебный центр Sigur",
+      "url": "https://online.sigursys.com/",
+      "description": "Бесплатные онлайн-курсы по СКУД Sigur",
+      "category": "training",
+      "tags": ["обучение", "скуд"],
+      "order": 6
+    },
+    {
+      "id": "parsec-academy",
+      "title": "Академия Parsec",
+      "url": "https://www.parsec.ru/personal/academy/",
+      "description": "Обучение системам безопасности и СКУД Parsec",
+      "category": "training",
+      "tags": ["обучение", "скуд"],
+      "order": 7
+    },
+    {
+      "id": "rubezh-edu",
+      "title": "Учебный центр Rubezh",
+      "url": "https://sdo.rubezh.ru",
+      "description": "Онлайн-обучение оборудованию Rubezh: ОПС и СКУД",
+      "category": "training",
+      "tags": ["обучение", "опс", "скуд"],
+      "order": 8
+    },
+    {
+      "id": "ajax-academy",
+      "title": "Академия Ajax",
+      "url": "https://academy-ru.ajax.systems",
+      "description": "Обучение охранным системам Ajax",
+      "category": "training",
+      "tags": ["обучение", "опс"],
+      "order": 9
+    },
+    {
+      "id": "dlink-learn",
+      "title": "Портал обучения D-Link",
+      "url": "https://learn.dlink.ru",
+      "description": "Дистанционные курсы по сетевому оборудованию D-Link",
+      "category": "training",
+      "tags": ["обучение", "сети"],
+      "order": 10
+    },
+    {
+      "id": "iek-academy",
+      "title": "Курсы IEK Academy",
+      "url": "https://academy.iek.group/courses/",
+      "description": "Курсы по телекоммуникациям и слаботочным системам",
+      "category": "training",
+      "tags": ["обучение", "сети"],
+      "order": 11
     },
     {
       "id": "jvsg-lens",
       "title": "Калькулятор объективов JVSG",
       "url": "https://www.jvsg.com/calculators/ru/kalkulator-objektivov/",
       "description": "Расчёт фокусного расстояния и зоны обзора камеры",
-      "category": "cctv-lens",
+      "category": "lens-calc",
       "tags": ["калькулятор", "объектив"],
       "order": 1
     },
@@ -125,7 +153,7 @@
       "title": "Инструменты CCTVLens",
       "url": "https://cctvlens.ru/instrumenty/",
       "description": "Подбор объектива и расчёты для видеонаблюдения",
-      "category": "cctv-lens",
+      "category": "lens-calc",
       "tags": ["калькулятор", "объектив"],
       "order": 2
     },
@@ -134,7 +162,7 @@
       "title": "PD-Calc от LTV",
       "url": "https://ltv-cctv.ru/support/calculators/pd-calc.php",
       "description": "Калькулятор фокусного расстояния объектива",
-      "category": "cctv-lens",
+      "category": "lens-calc",
       "tags": ["калькулятор", "объектив"],
       "order": 3
     },
@@ -143,7 +171,7 @@
       "title": "Калькуляторы Beward",
       "url": "https://www.beward.ru/calculators/",
       "description": "Расчёты фокусного расстояния, глубины резкости и других параметров",
-      "category": "cctv-lens",
+      "category": "lens-calc",
       "tags": ["калькулятор", "объектив"],
       "order": 4
     },
@@ -152,7 +180,7 @@
       "title": "Калькулятор фокусного расстояния (tehno32)",
       "url": "https://tehno32.ru/statya/kalkulyator-fokusnogo-rasstoyaniya",
       "description": "Онлайн-калькулятор фокусного расстояния объектива",
-      "category": "cctv-lens",
+      "category": "lens-calc",
       "tags": ["калькулятор", "объектив"],
       "order": 5
     },
@@ -161,7 +189,7 @@
       "title": "Storage & Bandwidth Calculator (JVSG)",
       "url": "https://www.jvsg.com/storage-bandwidth-calculator/",
       "description": "Расчёт объёма архива и пропускной способности сети",
-      "category": "cctv-archive",
+      "category": "archive-calc",
       "tags": ["калькулятор", "архив", "хранилище"],
       "order": 1
     },
@@ -170,7 +198,7 @@
       "title": "Калькулятор Videomax",
       "url": "https://www.videomax.ru/calculation/",
       "description": "Расчёт объёма архива видеонаблюдения",
-      "category": "cctv-archive",
+      "category": "archive-calc",
       "tags": ["калькулятор", "архив"],
       "order": 2
     },
@@ -179,7 +207,7 @@
       "title": "TRASSIR Calc (DSSL)",
       "url": "https://www.dssl.ru/integratoram/trassir-calc.php",
       "description": "Расчёт архива и нагрузки на сервер TRASSIR",
-      "category": "cctv-archive",
+      "category": "archive-calc",
       "tags": ["калькулятор", "архив"],
       "order": 3
     },
@@ -188,178 +216,16 @@
       "title": "Расчёт битрейта RVI",
       "url": "https://rvigroup.ru/tools/calc_bitrate/",
       "description": "Калькулятор битрейта и объёма архива",
-      "category": "cctv-archive",
+      "category": "archive-calc",
       "tags": ["калькулятор", "архив"],
       "order": 4
-    },
-    {
-      "id": "onvifdm",
-      "title": "ONVIF Device Manager",
-      "url": "https://sourceforge.net/projects/onvifdm/",
-      "description": "Поиск, подключение и настройка камер по протоколу ONVIF",
-      "category": "cctv-tools",
-      "tags": ["утилита", "onvif"],
-      "order": 1
-    },
-    {
-      "id": "ispyconnect",
-      "title": "Camera Connection Database",
-      "url": "https://www.ispyconnect.com/cameras",
-      "description": "База ссылок доступа (RTSP и др.) к камерам разных производителей",
-      "category": "cctv-tools",
-      "tags": ["база данных", "onvif"],
-      "order": 2
-    },
-    {
-      "id": "kompas-viewer",
-      "title": "КОМПАС-3D Viewer",
-      "url": "https://kompas.ru/kompas-3d-viewer/about/",
-      "description": "Бесплатный просмотрщик чертежей .dwg и .dxf",
-      "category": "cctv-tools",
-      "tags": ["утилита", "чертежи"],
-      "order": 3
-    },
-    {
-      "id": "dyadya-valya",
-      "title": "YouTube — Дядя Валя",
-      "url": "https://www.youtube.com/c/Valentain86/videos",
-      "description": "Практические видео про видеонаблюдение",
-      "category": "cctv-media",
-      "tags": ["видео", "канал"],
-      "order": 1
-    },
-    {
-      "id": "videomax-youtube",
-      "title": "YouTube — Videomax (Вектор Сервис)",
-      "url": "https://www.youtube.com/@videomaxcreation/playlists",
-      "description": "Обучающие видео, записи докладов и вебинаров по видеонаблюдению",
-      "category": "cctv-media",
-      "tags": ["видео", "канал", "обучение"],
-      "order": 2
-    },
-    {
-      "id": "videomax-articles",
-      "title": "Статьи Videomax",
-      "url": "https://www.videomax.ru/support/articles/",
-      "description": "Статьи о монтаже и настройке видеонаблюдения",
-      "category": "cctv-media",
-      "tags": ["статьи"],
-      "order": 3
-    },
-    {
-      "id": "sigur-edu",
-      "title": "Учебный центр Sigur",
-      "url": "https://online.sigursys.com/",
-      "description": "Бесплатные онлайн-курсы по СКУД Sigur",
-      "category": "acs-training",
-      "tags": ["обучение", "скуд"],
-      "order": 1
-    },
-    {
-      "id": "parsec-academy",
-      "title": "Академия Parsec",
-      "url": "https://www.parsec.ru/personal/academy/",
-      "description": "Обучение системам безопасности и СКУД Parsec",
-      "category": "acs-training",
-      "tags": ["обучение", "скуд"],
-      "order": 2
-    },
-    {
-      "id": "rfid-converter",
-      "title": "RFID конвертер",
-      "url": "https://github.com/avelender/rfid_converter",
-      "description": "Конвертер номеров меток EM-Marine для болидовского СКУД",
-      "category": "acs-tools",
-      "tags": ["утилита", "open-source", "rfid"],
-      "order": 1
-    },
-    {
-      "id": "ajax-academy",
-      "title": "Академия Ajax",
-      "url": "https://academy-ru.ajax.systems",
-      "description": "Обучение охранным системам Ajax",
-      "category": "ops-training",
-      "tags": ["обучение", "опс"],
-      "order": 1
-    },
-    {
-      "id": "rubezh-edu",
-      "title": "Учебный центр Rubezh",
-      "url": "https://sdo.rubezh.ru",
-      "description": "Онлайн-обучение оборудованию Rubezh: ОПС и СКУД",
-      "category": "ops-training",
-      "tags": ["обучение", "опс", "скуд"],
-      "order": 2
-    },
-    {
-      "id": "intems-blog",
-      "title": "Блог Интемс",
-      "url": "https://securityrussia.com/blog/",
-      "description": "Статьи о системах безопасности",
-      "category": "ops-media",
-      "tags": ["блог", "статьи"],
-      "order": 1
-    },
-    {
-      "id": "dlink-learn",
-      "title": "Портал обучения D-Link",
-      "url": "https://learn.dlink.ru",
-      "description": "Дистанционные курсы по сетевому оборудованию D-Link",
-      "category": "network-training",
-      "tags": ["обучение", "сети"],
-      "order": 1
-    },
-    {
-      "id": "iek-academy",
-      "title": "Курсы IEK Academy",
-      "url": "https://academy.iek.group/courses/",
-      "description": "Курсы по телекоммуникациям и слаботочным системам",
-      "category": "network-training",
-      "tags": ["обучение", "сети"],
-      "order": 2
-    },
-    {
-      "id": "lantopolog",
-      "title": "LanTopolog",
-      "url": "https://www.lantopolog.com/ru/",
-      "description": "Автоматическое построение карты сети по SNMP",
-      "category": "network-tools",
-      "tags": ["утилита", "сети"],
-      "order": 1
-    },
-    {
-      "id": "pinglo",
-      "title": "Pinglo",
-      "url": "https://github.com/avelender/Pinglo",
-      "description": "Запись логов пинга для диагностики связи",
-      "category": "network-tools",
-      "tags": ["утилита", "open-source", "сети"],
-      "order": 2
-    },
-    {
-      "id": "vnikni",
-      "title": "YouTube — ВНИКНИ",
-      "url": "https://www.youtube.com/c/%D0%92%D0%9D%D0%98%D0%9A%D0%9D%D0%98/videos",
-      "description": "Видео о сетях",
-      "category": "network-media",
-      "tags": ["видео", "канал", "сети"],
-      "order": 1
-    },
-    {
-      "id": "merion",
-      "title": "YouTube — Merion Academy",
-      "url": "https://www.youtube.com/@merionacademy",
-      "description": "Канал дистанционных курсов с доходчивыми объяснениями ИТ-технологий",
-      "category": "network-media",
-      "tags": ["видео", "канал", "обучение"],
-      "order": 2
     },
     {
       "id": "marvel-raid",
       "title": "Типы и уровни RAID-массивов (Marvel)",
       "url": "https://market.marvel.ru/blog/servery/tipy-i-urovni-raid-massivov/",
       "description": "Обзор уровней RAID и их особенностей",
-      "category": "storage-raid",
+      "category": "raid-about",
       "tags": ["raid", "статьи"],
       "order": 1
     },
@@ -368,7 +234,7 @@
       "title": "RAID-ликбез (interface31)",
       "url": "https://interface31.ru/tech_it/2019/05/raid-likbez.html",
       "description": "Подробная статья о технологии RAID",
-      "category": "storage-raid",
+      "category": "raid-about",
       "tags": ["raid", "статьи"],
       "order": 2
     },
@@ -377,7 +243,7 @@
       "title": "Варианты RAID (internet-lab)",
       "url": "https://internet-lab.ru/raid_options",
       "description": "Описание и сравнение вариантов RAID",
-      "category": "storage-raid",
+      "category": "raid-about",
       "tags": ["raid", "статьи"],
       "order": 3
     },
@@ -386,7 +252,7 @@
       "title": "FAQ по RAID (bestor)",
       "url": "https://www.bestor.spb.ru/v3/Faq?cat_id=87",
       "description": "Ответы на частые вопросы о RAID-массивах",
-      "category": "storage-raid",
+      "category": "raid-about",
       "tags": ["raid", "статьи"],
       "order": 4
     },
@@ -395,7 +261,7 @@
       "title": "RAID: краткий путеводитель (Miran)",
       "url": "https://miran.ru/blog/raid-kratkiy-putevoditel-po-tehnologii",
       "description": "Краткий путеводитель по технологии RAID",
-      "category": "storage-raid",
+      "category": "raid-about",
       "tags": ["raid", "статьи"],
       "order": 5
     },
@@ -404,7 +270,7 @@
       "title": "RAID IOPS Calculator (Team)",
       "url": "https://www.team.ru/RAID-IOPS-Calculator.php",
       "description": "Расчёт производительности RAID-массива",
-      "category": "storage-raid-calc",
+      "category": "raid-calc",
       "tags": ["калькулятор", "raid"],
       "order": 1
     },
@@ -413,7 +279,7 @@
       "title": "Калькулятор RAID (PlanetCalc)",
       "url": "https://planetcalc.ru/4215/",
       "description": "Расчёт параметров RAID-массива",
-      "category": "storage-raid-calc",
+      "category": "raid-calc",
       "tags": ["калькулятор", "raid"],
       "order": 2
     },
@@ -422,7 +288,7 @@
       "title": "Калькулятор надёжности RAID",
       "url": "https://www.alifatov.ru/raid-reliability-calculator/",
       "description": "Оценка надёжности RAID-массива",
-      "category": "storage-raid-calc",
+      "category": "raid-calc",
       "tags": ["калькулятор", "raid"],
       "order": 3
     },
@@ -431,7 +297,7 @@
       "title": "RAID Configurator (Wit)",
       "url": "https://wit.ru/equipment/server/raid-configurator.aspx",
       "description": "Конфигуратор RAID-массивов",
-      "category": "storage-raid-calc",
+      "category": "raid-calc",
       "tags": ["калькулятор", "raid"],
       "order": 4
     },
@@ -440,7 +306,7 @@
       "title": "RAID Calculator (ASP Systems)",
       "url": "https://www.aspsys.com/raid-calculator/",
       "description": "Расчёт ёмкости и конфигурации RAID",
-      "category": "storage-raid-calc",
+      "category": "raid-calc",
       "tags": ["калькулятор", "raid"],
       "order": 5
     },
@@ -449,198 +315,306 @@
       "title": "Калькулятор IOPS (internet-lab)",
       "url": "https://internet-lab.ru/IOPS_calc",
       "description": "Расчёт производительности дисковой подсистемы",
-      "category": "storage-raid-calc",
+      "category": "raid-calc",
       "tags": ["калькулятор", "raid"],
       "order": 6
     },
     {
-      "id": "datarc-articles",
-      "title": "Статьи о RAID и СХД (Datarc)",
-      "url": "https://www.datarc.ru/articles/",
-      "description": "Статьи про RAID-массивы, серверы и сетевые хранилища",
-      "category": "storage-drives",
-      "tags": ["статьи", "raid", "хранилище"],
+      "id": "intems-blog",
+      "title": "Блог Интемс",
+      "url": "https://securityrussia.com/blog/",
+      "description": "Статьи о системах безопасности",
+      "category": "useful",
+      "tags": ["блог", "статьи"],
       "order": 1
     },
     {
-      "id": "rlab-doc",
-      "title": "Статьи о восстановлении данных (Rlab)",
-      "url": "https://rlab.ru/doc/",
-      "description": "Статьи про хранение информации и восстановление данных",
-      "category": "storage-drives",
-      "tags": ["статьи", "восстановление данных"],
+      "id": "videomax-youtube",
+      "title": "YouTube — Videomax (Вектор Сервис)",
+      "url": "https://www.youtube.com/@videomaxcreation/playlists",
+      "description": "Обучающие видео, записи докладов и вебинаров по видеонаблюдению",
+      "category": "useful",
+      "tags": ["видео", "канал", "обучение"],
       "order": 2
-    },
-    {
-      "id": "pc3000-hdd",
-      "title": "Устройство жёсткого диска (PC-3000)",
-      "url": "https://lowvolt.ru/PC-3000-informaciya-dlya-nachinayushchih.pdf",
-      "description": "Универсальные методы диагностики HDD от ACElab",
-      "category": "storage-drives",
-      "tags": ["книга", "pdf", "восстановление данных"],
-      "order": 3
-    },
-    {
-      "id": "dorin",
-      "title": "YouTube — Василий Дорин",
-      "url": "https://www.youtube.com/@DorinVU/videos",
-      "description": "Канал о накопителях и восстановлении информации",
-      "category": "storage-drives",
-      "tags": ["видео", "канал", "восстановление данных"],
-      "order": 4
-    },
-    {
-      "id": "hdsentinel",
-      "title": "Hard Disk Sentinel",
-      "url": "https://www.hdsentinel.com/",
-      "description": "Мониторинг и оповещения о состоянии дисков, работает с RAID из коробки",
-      "category": "storage-drives",
-      "tags": ["утилита", "накопители"],
-      "order": 5
-    },
-    {
-      "id": "strelec",
-      "title": "Сергей Стрелец",
-      "url": "https://sergeistrelec.name/",
-      "description": "Загрузочные образы для диагностики, настройки и ремонта",
-      "category": "it",
-      "tags": ["утилита", "загрузочные образы"],
-      "order": 1
-    },
-    {
-      "id": "massgrave",
-      "title": "Massgrave",
-      "url": "https://massgrave.dev/",
-      "description": "Бесплатная активация продуктов Microsoft для физических лиц",
-      "category": "it",
-      "tags": ["софт"],
-      "order": 2
-    },
-    {
-      "id": "aspia",
-      "title": "Aspia",
-      "url": "https://aspia.org/",
-      "description": "Open source удалённое управление ОС с собственным шлюзом для работы через NAT",
-      "category": "it",
-      "tags": ["утилита", "open-source"],
-      "order": 3
-    },
-    {
-      "id": "trackawesome",
-      "title": "Track Awesome List",
-      "url": "https://www.trackawesomelist.com/",
-      "description": "Агрегатор списков open source проектов",
-      "category": "it",
-      "tags": ["каталог", "open-source"],
-      "order": 4
-    },
-    {
-      "id": "kanboard",
-      "title": "Kanboard",
-      "url": "https://kanboard.org/",
-      "description": "Бесплатный и функциональный self-hosted менеджер задач",
-      "category": "it",
-      "tags": ["софт", "open-source"],
-      "order": 5
-    },
-    {
-      "id": "passmark",
-      "title": "PassMark",
-      "url": "https://www.passmark.com/",
-      "description": "Результаты тестов и рейтинги железа",
-      "category": "it",
-      "tags": ["тесты", "железо"],
-      "order": 6
-    },
-    {
-      "id": "userbenchmark",
-      "title": "UserBenchmark",
-      "url": "https://www.userbenchmark.com/",
-      "description": "Тесты и рейтинги железа от пользователей",
-      "category": "it",
-      "tags": ["тесты", "железо"],
-      "order": 7
-    },
-    {
-      "id": "sysgauge",
-      "title": "SysGauge",
-      "url": "https://sysgauge.com",
-      "description": "Анализ производительности системы",
-      "category": "it",
-      "tags": ["утилита"],
-      "order": 8
-    },
-    {
-      "id": "tcpview",
-      "title": "TCPView",
-      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview",
-      "description": "Мониторинг сетевой активности приложений и служб",
-      "category": "it",
-      "tags": ["утилита", "сети"],
-      "order": 9
-    },
-    {
-      "id": "drawio",
-      "title": "Draw.io",
-      "url": "https://www.drawio.com/",
-      "description": "Когда надо набросать всем понятную схему",
-      "category": "it",
-      "tags": ["утилита", "схемы"],
-      "order": 10
-    },
-    {
-      "id": "zalman-ve350",
-      "title": "Zalman VE350",
-      "url": "https://www.zalman.com/RU/Product/ProductDetail.do?pageIndex=1&pageSize=10&pageUnit=12&productSeq=915&searchCategory1=86&searchCategory2=89&searchCategory3=-99&searchKey=&searchWord=",
-      "description": "Кейсы для 2,5\" накопителей с функцией эмуляции образов",
-      "category": "it",
-      "tags": ["железо", "накопители"],
-      "order": 11
     },
     {
       "id": "bible-cctv",
       "title": "Библия видеонаблюдения (Демьяновский)",
       "url": "https://www.secfocus.ru/shop/books/19000.htm",
       "description": "Классическая книга по видеонаблюдению",
-      "category": "docs",
+      "category": "useful",
       "tags": ["книга", "видеонаблюдение"],
-      "order": 1
+      "order": 3
     },
     {
       "id": "lytkin-ip",
       "title": "IP-Видеонаблюдение. Наглядное пособие (Лыткин)",
       "url": "https://lowvolt.ru/alex_lytkin_ip_video_bw.pdf",
       "description": "Наглядное пособие по IP-видеонаблюдению",
-      "category": "docs",
+      "category": "useful",
       "tags": ["книга", "pdf", "видеонаблюдение"],
-      "order": 2
+      "order": 4
     },
     {
       "id": "axis-guide",
       "title": "Руководство по IP-видеонаблюдению (Axis)",
       "url": "https://lowvolt.ru/Axis.pdf",
       "description": "Руководство по проектированию IP-видеонаблюдения",
-      "category": "docs",
+      "category": "useful",
       "tags": ["руководство", "pdf", "видеонаблюдение"],
-      "order": 3
+      "order": 5
+    },
+    {
+      "id": "drawio",
+      "title": "Draw.io",
+      "url": "https://www.drawio.com/",
+      "description": "Когда надо набросать всем понятную схему",
+      "category": "useful",
+      "tags": ["утилита", "схемы"],
+      "order": 6
+    },
+    {
+      "id": "onvifdm",
+      "title": "ONVIF Device Manager",
+      "url": "https://sourceforge.net/projects/onvifdm/",
+      "description": "Поиск, подключение и настройка камер по протоколу ONVIF",
+      "category": "useful",
+      "tags": ["утилита", "onvif"],
+      "order": 7
+    },
+    {
+      "id": "ispyconnect",
+      "title": "Camera Connection Database",
+      "url": "https://www.ispyconnect.com/cameras",
+      "description": "База ссылок доступа (RTSP и др.) к камерам разных производителей",
+      "category": "useful",
+      "tags": ["база данных", "onvif"],
+      "order": 8
+    },
+    {
+      "id": "rfid-converter",
+      "title": "RFID конвертер",
+      "url": "https://github.com/avelender/rfid_converter",
+      "description": "Конвертер номеров меток EM-Marine для болидовского СКУД",
+      "category": "useful",
+      "tags": ["утилита", "open-source", "rfid"],
+      "order": 9
+    },
+    {
+      "id": "kompas-viewer",
+      "title": "КОМПАС-3D Viewer",
+      "url": "https://kompas.ru/kompas-3d-viewer/about/",
+      "description": "Бесплатный просмотрщик чертежей .dwg и .dxf",
+      "category": "useful",
+      "tags": ["утилита", "чертежи"],
+      "order": 10
+    },
+    {
+      "id": "videomax-articles",
+      "title": "Статьи Videomax",
+      "url": "https://www.videomax.ru/support/articles/",
+      "description": "Статьи о монтаже и настройке видеонаблюдения",
+      "category": "useful",
+      "tags": ["статьи"],
+      "order": 11
+    },
+    {
+      "id": "dyadya-valya",
+      "title": "YouTube — Дядя Валя",
+      "url": "https://www.youtube.com/c/Valentain86/videos",
+      "description": "Практические видео про видеонаблюдение",
+      "category": "useful",
+      "tags": ["видео", "канал"],
+      "order": 12
+    },
+    {
+      "id": "strelec",
+      "title": "Сергей Стрелец",
+      "url": "https://sergeistrelec.name/",
+      "description": "Загрузочные образы для диагностики, настройки и ремонта",
+      "category": "useful",
+      "tags": ["утилита", "загрузочные образы"],
+      "order": 13
+    },
+    {
+      "id": "massgrave",
+      "title": "Massgrave",
+      "url": "https://massgrave.dev/",
+      "description": "Бесплатная активация продуктов Microsoft для физических лиц",
+      "category": "useful",
+      "tags": ["софт"],
+      "order": 14
+    },
+    {
+      "id": "lantopolog",
+      "title": "LanTopolog",
+      "url": "https://www.lantopolog.com/ru/",
+      "description": "Автоматическое построение карты сети по SNMP",
+      "category": "useful",
+      "tags": ["утилита", "сети"],
+      "order": 15
+    },
+    {
+      "id": "aspia",
+      "title": "Aspia",
+      "url": "https://aspia.org/",
+      "description": "Open source удалённое управление ОС с собственным шлюзом для работы через NAT",
+      "category": "useful",
+      "tags": ["утилита", "open-source"],
+      "order": 16
+    },
+    {
+      "id": "trackawesome",
+      "title": "Track Awesome List",
+      "url": "https://www.trackawesomelist.com/",
+      "description": "Агрегатор списков open source проектов",
+      "category": "useful",
+      "tags": ["каталог", "open-source"],
+      "order": 17
+    },
+    {
+      "id": "kanboard",
+      "title": "Kanboard",
+      "url": "https://kanboard.org/",
+      "description": "Бесплатный и функциональный self-hosted менеджер задач",
+      "category": "useful",
+      "tags": ["софт", "open-source"],
+      "order": 18
+    },
+    {
+      "id": "passmark",
+      "title": "PassMark",
+      "url": "https://www.passmark.com/",
+      "description": "Результаты тестов и рейтинги железа",
+      "category": "useful",
+      "tags": ["тесты", "железо"],
+      "order": 19
+    },
+    {
+      "id": "userbenchmark",
+      "title": "UserBenchmark",
+      "url": "https://www.userbenchmark.com/",
+      "description": "Тесты и рейтинги железа от пользователей",
+      "category": "useful",
+      "tags": ["тесты", "железо"],
+      "order": 20
+    },
+    {
+      "id": "sysgauge",
+      "title": "SysGauge",
+      "url": "https://sysgauge.com",
+      "description": "Анализ производительности системы",
+      "category": "useful",
+      "tags": ["утилита"],
+      "order": 21
+    },
+    {
+      "id": "tcpview",
+      "title": "TCPView",
+      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview",
+      "description": "Мониторинг сетевой активности приложений и служб",
+      "category": "useful",
+      "tags": ["утилита", "сети"],
+      "order": 22
+    },
+    {
+      "id": "pinglo",
+      "title": "Pinglo",
+      "url": "https://github.com/avelender/Pinglo",
+      "description": "Запись логов пинга для диагностики связи",
+      "category": "useful",
+      "tags": ["утилита", "open-source", "сети"],
+      "order": 23
     },
     {
       "id": "strigunov",
       "title": "Введение в компьютерные сети (Стригунов)",
       "url": "https://lowvolt.ru/strugunov_vvedenie_seti.pdf",
       "description": "Учебное пособие по компьютерным сетям",
-      "category": "docs",
+      "category": "useful",
       "tags": ["книга", "pdf", "сети"],
-      "order": 4
+      "order": 24
     },
     {
       "id": "linkmeup",
       "title": "Сети для самых маленьких",
       "url": "https://linkmeup.gitbook.io",
       "description": "Популярный цикл статей про сети для начинающих",
-      "category": "docs",
+      "category": "useful",
       "tags": ["книга", "статьи", "сети"],
-      "order": 5
+      "order": 25
+    },
+    {
+      "id": "zalman-ve350",
+      "title": "Zalman VE350",
+      "url": "https://www.zalman.com/RU/Product/ProductDetail.do?pageIndex=1&pageSize=10&pageUnit=12&productSeq=915&searchCategory1=86&searchCategory2=89&searchCategory3=-99&searchKey=&searchWord=",
+      "description": "Кейсы для 2,5\" накопителей с функцией эмуляции образов",
+      "category": "useful",
+      "tags": ["железо", "накопители"],
+      "order": 26
+    },
+    {
+      "id": "vnikni",
+      "title": "YouTube — ВНИКНИ",
+      "url": "https://www.youtube.com/c/%D0%92%D0%9D%D0%98%D0%9A%D0%9D%D0%98/videos",
+      "description": "Видео о сетях",
+      "category": "useful",
+      "tags": ["видео", "канал", "сети"],
+      "order": 27
+    },
+    {
+      "id": "merion",
+      "title": "YouTube — Merion Academy",
+      "url": "https://www.youtube.com/@merionacademy",
+      "description": "Канал дистанционных курсов с доходчивыми объяснениями ИТ-технологий",
+      "category": "useful",
+      "tags": ["видео", "канал", "обучение"],
+      "order": 28
+    },
+    {
+      "id": "datarc-articles",
+      "title": "Статьи о RAID и СХД (Datarc)",
+      "url": "https://www.datarc.ru/articles/",
+      "description": "Статьи про RAID-массивы, серверы и сетевые хранилища",
+      "category": "useful",
+      "tags": ["статьи", "raid", "хранилище"],
+      "order": 29
+    },
+    {
+      "id": "rlab-doc",
+      "title": "Статьи о восстановлении данных (Rlab)",
+      "url": "https://rlab.ru/doc/",
+      "description": "Статьи про хранение информации и восстановление данных",
+      "category": "useful",
+      "tags": ["статьи", "восстановление данных"],
+      "order": 30
+    },
+    {
+      "id": "pc3000-hdd",
+      "title": "Устройство жёсткого диска (PC-3000)",
+      "url": "https://lowvolt.ru/PC-3000-informaciya-dlya-nachinayushchih.pdf",
+      "description": "Универсальные методы диагностики HDD от ACElab",
+      "category": "useful",
+      "tags": ["книга", "pdf", "восстановление данных"],
+      "order": 31
+    },
+    {
+      "id": "dorin",
+      "title": "YouTube — Василий Дорин",
+      "url": "https://www.youtube.com/@DorinVU/videos",
+      "description": "Канал о накопителях и восстановлении информации",
+      "category": "useful",
+      "tags": ["видео", "канал", "восстановление данных"],
+      "order": 32
+    },
+    {
+      "id": "hdsentinel",
+      "title": "Hard Disk Sentinel",
+      "url": "https://www.hdsentinel.com/",
+      "description": "Мониторинг и оповещения о состоянии дисков, работает с RAID из коробки",
+      "category": "useful",
+      "tags": ["утилита", "накопители"],
+      "order": 33
     }
   ]
 }
