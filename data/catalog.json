@@ -6,7 +6,12 @@
       "id": "training",
       "name": "Бесплатное онлайн обучение",
       "order": 1,
-      "children": []
+      "children": [
+        { "id": "training-cctv", "name": "по видеонаблюдению", "order": 1, "children": [] },
+        { "id": "training-acs", "name": "по СКУД", "order": 2, "children": [] },
+        { "id": "training-ops", "name": "по охранной сигнализации", "order": 3, "children": [] },
+        { "id": "training-net", "name": "по сетям и коммуникациям", "order": 4, "children": [] }
+      ]
     },
     {
       "id": "lens-calc",
@@ -36,7 +41,11 @@
       "id": "useful",
       "name": "Полезное",
       "order": 6,
-      "children": []
+      "children": [
+        { "id": "useful-security", "name": "Системы безопасности", "order": 1, "children": [] },
+        { "id": "useful-it", "name": "ИТ", "order": 2, "children": [] },
+        { "id": "useful-storage", "name": "Накопители и RAID", "order": 3, "children": [] }
+      ]
     }
   ],
   "resources": [
@@ -45,99 +54,99 @@
       "title": "Портал обучения DSSL",
       "url": "https://edu.dssl.ru/",
       "description": "Бесплатные курсы и вебинары по видеонаблюдению и TRASSIR",
-      "category": "training",
+      "category": "training-cctv",
       "tags": ["обучение", "видеонаблюдение"],
       "order": 1
-    },
-    {
-      "id": "idis-elearning",
-      "title": "Онлайн обучение IDIS",
-      "url": "https://forms.yandex.ru/cloud/5def5e2d2c7b8b0cd4158b6f/",
-      "description": "Регистрация на бесплатные онлайн-курсы IDIS E-learning",
-      "category": "training",
-      "tags": ["обучение", "видеонаблюдение"],
-      "order": 2
-    },
-    {
-      "id": "satvision-school",
-      "title": "Курсы Satvision",
-      "url": "https://school.satvision-cctv.ru",
-      "description": "Учебные курсы по видеонаблюдению",
-      "category": "training",
-      "tags": ["обучение", "видеонаблюдение"],
-      "order": 3
-    },
-    {
-      "id": "axis-learning",
-      "title": "Портал обучения Axis",
-      "url": "https://www.axis.com/learning",
-      "description": "Курсы и материалы учебного портала Axis Communications",
-      "category": "training",
-      "tags": ["обучение", "видеонаблюдение"],
-      "order": 4
-    },
-    {
-      "id": "stepik-cctv",
-      "title": "Основы видеонаблюдения на Stepik",
-      "url": "https://stepik.org/course/54537/promo",
-      "description": "Бесплатный курс по основам видеонаблюдения",
-      "category": "training",
-      "tags": ["обучение", "видеонаблюдение"],
-      "order": 5
-    },
-    {
-      "id": "sigur-edu",
-      "title": "Учебный центр Sigur",
-      "url": "https://online.sigursys.com/",
-      "description": "Бесплатные онлайн-курсы по СКУД Sigur",
-      "category": "training",
-      "tags": ["обучение", "скуд"],
-      "order": 6
-    },
-    {
-      "id": "parsec-academy",
-      "title": "Академия Parsec",
-      "url": "https://www.parsec.ru/personal/academy/",
-      "description": "Обучение системам безопасности и СКУД Parsec",
-      "category": "training",
-      "tags": ["обучение", "скуд"],
-      "order": 7
     },
     {
       "id": "rubezh-edu",
       "title": "Учебный центр Rubezh",
       "url": "https://sdo.rubezh.ru",
       "description": "Онлайн-обучение оборудованию Rubezh: ОПС и СКУД",
-      "category": "training",
-      "tags": ["обучение", "опс", "скуд"],
-      "order": 8
+      "category": "training-cctv",
+      "tags": ["обучение", "видеонаблюдение", "опс", "скуд"],
+      "order": 2
+    },
+    {
+      "id": "idis-elearning",
+      "title": "Регистрация на онлайн обучение IDIS E-learning",
+      "url": "https://forms.yandex.ru/cloud/5def5e2d2c7b8b0cd4158b6f/",
+      "description": "Регистрация на бесплатные онлайн-курсы IDIS E-learning",
+      "category": "training-cctv",
+      "tags": ["обучение", "видеонаблюдение"],
+      "order": 3
+    },
+    {
+      "id": "satvision-school",
+      "title": "Курсы от Satvision",
+      "url": "https://school.satvision-cctv.ru",
+      "description": "Учебные курсы по видеонаблюдению",
+      "category": "training-cctv",
+      "tags": ["обучение", "видеонаблюдение"],
+      "order": 4
+    },
+    {
+      "id": "axis-learning",
+      "title": "Портал обучения Axis",
+      "url": "https://www.axis.com/learning",
+      "description": "Курсы и материалы учебного портала Axis Communications",
+      "category": "training-cctv",
+      "tags": ["обучение", "видеонаблюдение"],
+      "order": 5
+    },
+    {
+      "id": "stepik-cctv",
+      "title": "Курс по основам видеонаблюдения на Stepik",
+      "url": "https://stepik.org/course/54537/promo",
+      "description": "Бесплатный курс по основам видеонаблюдения",
+      "category": "training-cctv",
+      "tags": ["обучение", "видеонаблюдение"],
+      "order": 6
+    },
+    {
+      "id": "sigur-edu",
+      "title": "Учебный центр Sigur",
+      "url": "https://online.sigursys.com/",
+      "description": "Бесплатные онлайн-курсы по СКУД Sigur",
+      "category": "training-acs",
+      "tags": ["обучение", "скуд"],
+      "order": 1
+    },
+    {
+      "id": "parsec-academy",
+      "title": "Академия Parsec",
+      "url": "https://www.parsec.ru/personal/academy/",
+      "description": "Обучение системам безопасности и СКУД Parsec",
+      "category": "training-acs",
+      "tags": ["обучение", "скуд"],
+      "order": 2
     },
     {
       "id": "ajax-academy",
       "title": "Академия Ajax",
       "url": "https://academy-ru.ajax.systems",
       "description": "Обучение охранным системам Ajax",
-      "category": "training",
+      "category": "training-ops",
       "tags": ["обучение", "опс"],
-      "order": 9
+      "order": 1
     },
     {
       "id": "dlink-learn",
-      "title": "Портал обучения D-Link",
+      "title": "Портал дистанционного обучения D-link",
       "url": "https://learn.dlink.ru",
       "description": "Дистанционные курсы по сетевому оборудованию D-Link",
-      "category": "training",
+      "category": "training-net",
       "tags": ["обучение", "сети"],
-      "order": 10
+      "order": 1
     },
     {
       "id": "iek-academy",
-      "title": "Курсы IEK Academy",
+      "title": "Курсы IEK Academy по телекоммуникациям",
       "url": "https://academy.iek.group/courses/",
       "description": "Курсы по телекоммуникациям и слаботочным системам",
-      "category": "training",
+      "category": "training-net",
       "tags": ["обучение", "сети"],
-      "order": 11
+      "order": 2
     },
     {
       "id": "jvsg-lens",
@@ -324,7 +333,7 @@
       "title": "Блог Интемс",
       "url": "https://securityrussia.com/blog/",
       "description": "Статьи о системах безопасности",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["блог", "статьи"],
       "order": 1
     },
@@ -333,34 +342,34 @@
       "title": "YouTube — Videomax (Вектор Сервис)",
       "url": "https://www.youtube.com/@videomaxcreation/playlists",
       "description": "Обучающие видео, записи докладов и вебинаров по видеонаблюдению",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["видео", "канал", "обучение"],
       "order": 2
     },
     {
       "id": "bible-cctv",
-      "title": "Библия видеонаблюдения (Демьяновский)",
+      "title": "Демьяновский: Библия видеонаблюдения",
       "url": "https://www.secfocus.ru/shop/books/19000.htm",
       "description": "Классическая книга по видеонаблюдению",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["книга", "видеонаблюдение"],
       "order": 3
     },
     {
       "id": "lytkin-ip",
-      "title": "IP-Видеонаблюдение. Наглядное пособие (Лыткин)",
+      "title": "Лыткин: IP-Видеонаблюдение. Наглядное пособие",
       "url": "https://lowvolt.ru/alex_lytkin_ip_video_bw.pdf",
       "description": "Наглядное пособие по IP-видеонаблюдению",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["книга", "pdf", "видеонаблюдение"],
       "order": 4
     },
     {
       "id": "axis-guide",
-      "title": "Руководство по IP-видеонаблюдению (Axis)",
+      "title": "Руководство по ip-видеонаблюдению от Axis",
       "url": "https://lowvolt.ru/Axis.pdf",
       "description": "Руководство по проектированию IP-видеонаблюдения",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["руководство", "pdf", "видеонаблюдение"],
       "order": 5
     },
@@ -369,7 +378,7 @@
       "title": "Draw.io",
       "url": "https://www.drawio.com/",
       "description": "Когда надо набросать всем понятную схему",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["утилита", "схемы"],
       "order": 6
     },
@@ -378,7 +387,7 @@
       "title": "ONVIF Device Manager",
       "url": "https://sourceforge.net/projects/onvifdm/",
       "description": "Поиск, подключение и настройка камер по протоколу ONVIF",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["утилита", "onvif"],
       "order": 7
     },
@@ -387,7 +396,7 @@
       "title": "Camera Connection Database",
       "url": "https://www.ispyconnect.com/cameras",
       "description": "База ссылок доступа (RTSP и др.) к камерам разных производителей",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["база данных", "onvif"],
       "order": 8
     },
@@ -396,7 +405,7 @@
       "title": "RFID конвертер",
       "url": "https://github.com/avelender/rfid_converter",
       "description": "Конвертер номеров меток EM-Marine для болидовского СКУД",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["утилита", "open-source", "rfid"],
       "order": 9
     },
@@ -405,7 +414,7 @@
       "title": "КОМПАС-3D Viewer",
       "url": "https://kompas.ru/kompas-3d-viewer/about/",
       "description": "Бесплатный просмотрщик чертежей .dwg и .dxf",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["утилита", "чертежи"],
       "order": 10
     },
@@ -414,7 +423,7 @@
       "title": "Статьи Videomax",
       "url": "https://www.videomax.ru/support/articles/",
       "description": "Статьи о монтаже и настройке видеонаблюдения",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["статьи"],
       "order": 11
     },
@@ -423,7 +432,7 @@
       "title": "YouTube — Дядя Валя",
       "url": "https://www.youtube.com/c/Valentain86/videos",
       "description": "Практические видео про видеонаблюдение",
-      "category": "useful",
+      "category": "useful-security",
       "tags": ["видео", "канал"],
       "order": 12
     },
@@ -432,189 +441,189 @@
       "title": "Сергей Стрелец",
       "url": "https://sergeistrelec.name/",
       "description": "Загрузочные образы для диагностики, настройки и ремонта",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["утилита", "загрузочные образы"],
-      "order": 13
+      "order": 1
     },
     {
       "id": "massgrave",
       "title": "Massgrave",
       "url": "https://massgrave.dev/",
       "description": "Бесплатная активация продуктов Microsoft для физических лиц",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["софт"],
-      "order": 14
+      "order": 2
     },
     {
       "id": "lantopolog",
       "title": "LanTopolog",
       "url": "https://www.lantopolog.com/ru/",
       "description": "Автоматическое построение карты сети по SNMP",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["утилита", "сети"],
-      "order": 15
+      "order": 3
     },
     {
       "id": "aspia",
       "title": "Aspia",
       "url": "https://aspia.org/",
       "description": "Open source удалённое управление ОС с собственным шлюзом для работы через NAT",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["утилита", "open-source"],
-      "order": 16
+      "order": 4
     },
     {
       "id": "trackawesome",
       "title": "Track Awesome List",
       "url": "https://www.trackawesomelist.com/",
       "description": "Агрегатор списков open source проектов",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["каталог", "open-source"],
-      "order": 17
+      "order": 5
     },
     {
       "id": "kanboard",
       "title": "Kanboard",
       "url": "https://kanboard.org/",
       "description": "Бесплатный и функциональный self-hosted менеджер задач",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["софт", "open-source"],
-      "order": 18
+      "order": 6
     },
     {
       "id": "passmark",
       "title": "PassMark",
       "url": "https://www.passmark.com/",
       "description": "Результаты тестов и рейтинги железа",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["тесты", "железо"],
-      "order": 19
+      "order": 7
     },
     {
       "id": "userbenchmark",
       "title": "UserBenchmark",
       "url": "https://www.userbenchmark.com/",
       "description": "Тесты и рейтинги железа от пользователей",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["тесты", "железо"],
-      "order": 20
+      "order": 8
     },
     {
       "id": "sysgauge",
       "title": "SysGauge",
       "url": "https://sysgauge.com",
       "description": "Анализ производительности системы",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["утилита"],
-      "order": 21
+      "order": 9
     },
     {
       "id": "tcpview",
       "title": "TCPView",
       "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview",
       "description": "Мониторинг сетевой активности приложений и служб",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["утилита", "сети"],
-      "order": 22
+      "order": 10
     },
     {
       "id": "pinglo",
       "title": "Pinglo",
       "url": "https://github.com/avelender/Pinglo",
       "description": "Запись логов пинга для диагностики связи",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["утилита", "open-source", "сети"],
-      "order": 23
+      "order": 11
     },
     {
       "id": "strigunov",
-      "title": "Введение в компьютерные сети (Стригунов)",
+      "title": "Стригунов: Введение в компьютерные сети",
       "url": "https://lowvolt.ru/strugunov_vvedenie_seti.pdf",
       "description": "Учебное пособие по компьютерным сетям",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["книга", "pdf", "сети"],
-      "order": 24
+      "order": 12
     },
     {
       "id": "linkmeup",
       "title": "Сети для самых маленьких",
       "url": "https://linkmeup.gitbook.io",
       "description": "Популярный цикл статей про сети для начинающих",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["книга", "статьи", "сети"],
-      "order": 25
+      "order": 13
     },
     {
       "id": "zalman-ve350",
       "title": "Zalman VE350",
       "url": "https://www.zalman.com/RU/Product/ProductDetail.do?pageIndex=1&pageSize=10&pageUnit=12&productSeq=915&searchCategory1=86&searchCategory2=89&searchCategory3=-99&searchKey=&searchWord=",
       "description": "Кейсы для 2,5\" накопителей с функцией эмуляции образов",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["железо", "накопители"],
-      "order": 26
+      "order": 14
     },
     {
       "id": "vnikni",
       "title": "YouTube — ВНИКНИ",
       "url": "https://www.youtube.com/c/%D0%92%D0%9D%D0%98%D0%9A%D0%9D%D0%98/videos",
       "description": "Видео о сетях",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["видео", "канал", "сети"],
-      "order": 27
+      "order": 15
     },
     {
       "id": "merion",
       "title": "YouTube — Merion Academy",
       "url": "https://www.youtube.com/@merionacademy",
       "description": "Канал дистанционных курсов с доходчивыми объяснениями ИТ-технологий",
-      "category": "useful",
+      "category": "useful-it",
       "tags": ["видео", "канал", "обучение"],
-      "order": 28
+      "order": 16
     },
     {
       "id": "datarc-articles",
-      "title": "Статьи о RAID и СХД (Datarc)",
+      "title": "Статьи про RAID массивы, серверы и сетевые хранилища на Datarc",
       "url": "https://www.datarc.ru/articles/",
       "description": "Статьи про RAID-массивы, серверы и сетевые хранилища",
-      "category": "useful",
+      "category": "useful-storage",
       "tags": ["статьи", "raid", "хранилище"],
-      "order": 29
+      "order": 1
     },
     {
       "id": "rlab-doc",
-      "title": "Статьи о восстановлении данных (Rlab)",
+      "title": "Статьи про хранение информации и восстановление данных на Rlab",
       "url": "https://rlab.ru/doc/",
       "description": "Статьи про хранение информации и восстановление данных",
-      "category": "useful",
+      "category": "useful-storage",
       "tags": ["статьи", "восстановление данных"],
-      "order": 30
+      "order": 2
     },
     {
       "id": "pc3000-hdd",
-      "title": "Устройство жёсткого диска (PC-3000)",
+      "title": "Устройство жесткого диска и универсальные методы диагностики HDD от ACElab",
       "url": "https://lowvolt.ru/PC-3000-informaciya-dlya-nachinayushchih.pdf",
       "description": "Универсальные методы диагностики HDD от ACElab",
-      "category": "useful",
+      "category": "useful-storage",
       "tags": ["книга", "pdf", "восстановление данных"],
-      "order": 31
+      "order": 3
     },
     {
       "id": "dorin",
       "title": "YouTube — Василий Дорин",
       "url": "https://www.youtube.com/@DorinVU/videos",
       "description": "Канал о накопителях и восстановлении информации",
-      "category": "useful",
+      "category": "useful-storage",
       "tags": ["видео", "канал", "восстановление данных"],
-      "order": 32
+      "order": 4
     },
     {
       "id": "hdsentinel",
       "title": "Hard Disk Sentinel",
       "url": "https://www.hdsentinel.com/",
       "description": "Мониторинг и оповещения о состоянии дисков, работает с RAID из коробки",
-      "category": "useful",
+      "category": "useful-storage",
       "tags": ["утилита", "накопители"],
-      "order": 33
+      "order": 5
     }
   ]
 }
