@@ -234,9 +234,12 @@
   function buildTree() {
     els.tree.textContent = '';
 
+    var rootUl = document.createElement('ul');
+    rootUl.className = 'tree-root';
     catalog.categories.forEach(function (root) {
-      els.tree.appendChild(renderNode(root, 0));
+      rootUl.appendChild(renderNode(root, 0));
     });
+    els.tree.appendChild(rootUl);
 
     els.tree.addEventListener('click', onTreeClick);
     refreshTree();
